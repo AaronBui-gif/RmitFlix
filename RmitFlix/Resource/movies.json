@@ -1,0 +1,81 @@
+[
+   {
+      "id":1,
+      "title":"Star Wars: Episode VII The Force Awakens",
+      "year":2015,
+      "cast":[
+         "Harrison Ford",
+         "Mark Hamill",
+         "Carrie Fisher",
+         "Adam Driver",
+         "Daisy Ridley",
+         "John Boyega",
+         "Oscar Isaac",
+         "Lupita Nyong'o",
+         "Andy Serkis",
+         "Domhnall Gleeson",
+         "Anthony Daniels",
+         "Peter Mayhew",
+         "Max von Sydow"
+      ],
+      "genres":[
+         "space",
+         "epic",
+         "action"
+      ],
+      "summary":"Thirty years after the Battle of Endor, a new threat has risen in the form of the First Order and the villainous Kylo Ren. Meanwhile, Rey, a young scavenger, discovers powers that will change her life -- and possibly save the galaxy.",
+      "imageName":"picture1"
+   },
+   {
+      "id":2,
+      "title":"Red Notice",
+      "year":2021,
+      "cast":[
+         "Dwayne Johnson",
+         "Ryan Reynolds",
+         "Gal Gadot",
+         "Ritu Arya",
+         "Chris Diamantopoulos"
+      ],
+      "genres":[
+         "comedy",
+         "action"
+      ],
+      "summary":"An Interpol-issued red notice is a global alert to hunt and capture the world’s most wanted. But when a daring heist brings together the FBI’s top profiler (Johnson) and two rival criminals (Gadot, Reynolds), there’s no telling what will happen.",
+      "imageName":"picture2"
+   },
+   {
+      "id":3,
+      "title":"Morbius",
+      "year":2022,
+      "cast":[
+         "Jared Leto",
+         "Matt Smith",
+         "Adria Arjona",
+         "Jared Harris",
+         "Al Madrigal",
+         "Tyrese Gibson"
+      ],
+      "genres":[
+         "superhero",
+         "action"
+      ],
+      "summary":"Biochemist Michael Morbius tries to cure himself of a rare blood disease, but he inadvertently infects himself with a form of vampirism instead.",
+      "imageName":"picture3"
+   },
+   {
+      "id":4,
+      "title":"The Batman",
+      "year":2022,
+      "cast":[
+         "Robert Pattinson",
+         "Zoë Kravitz",
+         "Jeffrey Wright"
+      ],
+      "genres":[
+         "superhero",
+         "action"
+      ],
+      "summary":"When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.","imageName":"picture4"
+   }
+]

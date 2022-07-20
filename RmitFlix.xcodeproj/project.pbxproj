@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75969522288687C200D85052 /* RmitFlixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75969521288687C200D85052 /* RmitFlixApp.swift */; };
+		75969524288687C300D85052 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75969523288687C300D85052 /* ContentView.swift */; };
+		75969526288687C500D85052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75969525288687C500D85052 /* Assets.xcassets */; };
+		75969529288687C500D85052 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75969528288687C500D85052 /* Preview Assets.xcassets */; };
+		759695312886881F00D85052 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759695302886881F00D85052 /* MenuView.swift */; };
+		759695332886884100D85052 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759695322886884100D85052 /* Home.swift */; };
+		759695352886885B00D85052 /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759695342886885B00D85052 /* Carousel.swift */; };
+		759695382886887400D85052 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759695372886887400D85052 /* Picture.swift */; };
+		7596953C2886892100D85052 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596953B2886892100D85052 /* Movie.swift */; };
+		7596953E2886897A00D85052 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596953D2886897A00D85052 /* ModelData.swift */; };
+		75969540288689FF00D85052 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596953F288689FF00D85052 /* MovieList.swift */; };
+		7596954228868A4500D85052 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596954128868A4500D85052 /* MovieDetail.swift */; };
+		7596954528868A9500D85052 /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 7596954428868A9500D85052 /* movies.json */; };
+		7596954728868B5800D85052 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596954628868B5800D85052 /* SplashScreenView.swift */; };
+		7596954928868BBE00D85052 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596954828868BBE00D85052 /* CircleImage.swift */; };
+		7596954B28868BFB00D85052 /* MovieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596954A28868BFB00D85052 /* MovieRow.swift */; };
+		7596954D2886939F00D85052 /* note.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7596954C2886939F00D85052 /* note.txt */; };
+		7596954F28869FFD00D85052 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596954E28869FFD00D85052 /* NavigationBar.swift */; };
+		759695512886A02000D85052 /* NavigationBarLow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759695502886A02000D85052 /* NavigationBarLow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7596951E288687C200D85052 /* RmitFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RmitFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75969521288687C200D85052 /* RmitFlixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmitFlixApp.swift; sourceTree = "<group>"; };
+		75969523288687C300D85052 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		75969525288687C500D85052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75969528288687C500D85052 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		759695302886881F00D85052 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		759695322886884100D85052 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		759695342886885B00D85052 /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
+		759695372886887400D85052 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		7596953B2886892100D85052 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		7596953D2886897A00D85052 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		7596953F288689FF00D85052 /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
+		7596954128868A4500D85052 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		7596954428868A9500D85052 /* movies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
+		7596954628868B5800D85052 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		7596954828868BBE00D85052 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		7596954A28868BFB00D85052 /* MovieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRow.swift; sourceTree = "<group>"; };
+		7596954C2886939F00D85052 /* note.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = note.txt; sourceTree = "<group>"; };
+		7596954E28869FFD00D85052 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		759695502886A02000D85052 /* NavigationBarLow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarLow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7596951B288687C200D85052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75969515288687C200D85052 = {
+			isa = PBXGroup;
+			children = (
+				75969520288687C200D85052 /* RmitFlix */,
+				7596951F288687C200D85052 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7596951F288687C200D85052 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7596951E288687C200D85052 /* RmitFlix.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75969520288687C200D85052 /* RmitFlix */ = {
+			isa = PBXGroup;
+			children = (
+				7596954328868A8700D85052 /* Resource */,
+				759695362886886900D85052 /* Model */,
+				7596952F288687E300D85052 /* View */,
+				75969521288687C200D85052 /* RmitFlixApp.swift */,
+				75969523288687C300D85052 /* ContentView.swift */,
+				75969525288687C500D85052 /* Assets.xcassets */,
+				75969527288687C500D85052 /* Preview Content */,
+			);
+			path = RmitFlix;
+			sourceTree = "<group>";
+		};
+		75969527288687C500D85052 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				75969528288687C500D85052 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7596952F288687E300D85052 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				759695302886881F00D85052 /* MenuView.swift */,
+				759695322886884100D85052 /* Home.swift */,
+				759695342886885B00D85052 /* Carousel.swift */,
+				7596953F288689FF00D85052 /* MovieList.swift */,
+				7596954128868A4500D85052 /* MovieDetail.swift */,
+				7596954628868B5800D85052 /* SplashScreenView.swift */,
+				7596954828868BBE00D85052 /* CircleImage.swift */,
+				7596954A28868BFB00D85052 /* MovieRow.swift */,
+				7596954E28869FFD00D85052 /* NavigationBar.swift */,
+				759695502886A02000D85052 /* NavigationBarLow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		759695362886886900D85052 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				759695372886887400D85052 /* Picture.swift */,
+				7596953B2886892100D85052 /* Movie.swift */,
+				7596953D2886897A00D85052 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7596954328868A8700D85052 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7596954428868A9500D85052 /* movies.json */,
+				7596954C2886939F00D85052 /* note.txt */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7596951D288687C200D85052 /* RmitFlix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7596952C288687C500D85052 /* Build configuration list for PBXNativeTarget "RmitFlix" */;
+			buildPhases = (
+				7596951A288687C200D85052 /* Sources */,
+				7596951B288687C200D85052 /* Frameworks */,
+				7596951C288687C200D85052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RmitFlix;
+			productName = RmitFlix;
+			productReference = 7596951E288687C200D85052 /* RmitFlix.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75969516288687C200D85052 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					7596951D288687C200D85052 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 75969519288687C200D85052 /* Build configuration list for PBXProject "RmitFlix" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75969515288687C200D85052;
+			productRefGroup = 7596951F288687C200D85052 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7596951D288687C200D85052 /* RmitFlix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7596951C288687C200D85052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7596954D2886939F00D85052 /* note.txt in Resources */,
+				7596954528868A9500D85052 /* movies.json in Resources */,
+				75969529288687C500D85052 /* Preview Assets.xcassets in Resources */,
+				75969526288687C500D85052 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7596951A288687C200D85052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				759695382886887400D85052 /* Picture.swift in Sources */,
+				75969524288687C300D85052 /* ContentView.swift in Sources */,
+				7596953E2886897A00D85052 /* ModelData.swift in Sources */,
+				7596954928868BBE00D85052 /* CircleImage.swift in Sources */,
+				759695312886881F00D85052 /* MenuView.swift in Sources */,
+				7596954F28869FFD00D85052 /* NavigationBar.swift in Sources */,
+				759695332886884100D85052 /* Home.swift in Sources */,
+				759695352886885B00D85052 /* Carousel.swift in Sources */,
+				759695512886A02000D85052 /* NavigationBarLow.swift in Sources */,
+				7596953C2886892100D85052 /* Movie.swift in Sources */,
+				75969540288689FF00D85052 /* MovieList.swift in Sources */,
+				75969522288687C200D85052 /* RmitFlixApp.swift in Sources */,
+				7596954B28868BFB00D85052 /* MovieRow.swift in Sources */,
+				7596954228868A4500D85052 /* MovieDetail.swift in Sources */,
+				7596954728868B5800D85052 /* SplashScreenView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7596952A288687C500D85052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7596952B288687C500D85052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7596952D288687C500D85052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RmitFlix/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rmit.edu.RmitFlix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7596952E288687C500D85052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RmitFlix/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rmit.edu.RmitFlix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75969519288687C200D85052 /* Build configuration list for PBXProject "RmitFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7596952A288687C500D85052 /* Debug */,
+				7596952B288687C500D85052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7596952C288687C500D85052 /* Build configuration list for PBXNativeTarget "RmitFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7596952D288687C500D85052 /* Debug */,
+				7596952E288687C500D85052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75969516288687C200D85052 /* Project object */;
+}

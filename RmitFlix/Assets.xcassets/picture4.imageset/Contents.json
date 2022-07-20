@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "the-batman-2022-red-green-poster-n99l5099syr7vb0n.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "the-batman-2022-red-green-poster-n99l5099syr7vb0n@2x.jpeg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "the-batman-2022-red-green-poster-n99l5099syr7vb0n@3x.jpeg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
