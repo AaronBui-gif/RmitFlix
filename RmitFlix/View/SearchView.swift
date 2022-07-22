@@ -28,7 +28,19 @@ struct SearchView: View {
                         VStack{
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
-                                    Text("Popular on Rmitflex")
+                            FilteringList(movies, filterKeys: \.title) { movie in
+                                            VStack(alignment: .leading) {
+                                                Text(movie.title)
+                                                    .font(.headline)
+                                                Text(movie.summary)
+                                                    .foregroundColor(.secondary)
+                                            }
+                                        }
+                                }
+                            }
+                            ZStack(alignment: .leading) {
+                                VStack(alignment: .leading) {
+                                    Text("Top Searching on Rmitflix")
                                         .fontWeight(.semibold)
                                         .font(.system(size: 25))
                                         .foregroundColor(Color.white)

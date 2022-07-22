@@ -1,13 +1,13 @@
 //
-//  Home.swift
-//  Rmit (iOS)
+//  TestHomeView.swift
+//  RmitFlix
 //
-//  Created by Huy Bui Thanh on 08/07/2022.
+//  Created by Huy Bui Thanh on 20/07/2022.
 //
 
 import SwiftUI
 
-struct Home: View {
+struct TestHomeView: View {
     @State var currentIndex: Int = 0
     
     @State var pictures: [Picture] = []
@@ -17,7 +17,8 @@ struct Home: View {
         NavigationView{
             ZStack{
                 Color.black.ignoresSafeArea()
-  
+                //ScrollView {
+                //NavigationView{
                 VStack(spacing: 15) {
                     
                     
@@ -29,15 +30,15 @@ struct Home: View {
                                 VStack(alignment: .leading) {
                                     Image("picture2")
                                         .resizable()
-                                        .frame(width: 425, height: 600, alignment: .center)
-                            }
+                                        .frame(width: 425, height: 500, alignment: .center)
+                                }
                             }
                             ZStack(alignment: .leading) {
                                 HStack(alignment: .center, spacing: 80) {
                                     Button{
                                         
                                     } label: {
-                                        VStack(spacing: 5){
+                                        VStack{
                                             Image(systemName: "plus")
                                                 .resizable()
                                                 .frame(width: 20, height: 20, alignment: .center)
@@ -50,25 +51,21 @@ struct Home: View {
                                     Button{
                                         
                                     } label: {
-                                        HStack(spacing: 20){
-                                            Image(systemName: "play.fill")
+                                        HStack{
+                                            Image(systemName: "play")
                                                 .resizable()
                                                 .frame(width: 20, height: 20, alignment: .center)
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                             Text("Play")
-                                                .font(.title2)
-                                                .fontWeight(.semibold)
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.white)
                                         }
                                     }
-                                    .frame(width: 120, height:40)
-                                    .background(Color.white)
                                     
                                     // Info Button
                                     Button{
                                         
                                     } label: {
-                                        VStack (spacing: 5){
+                                        VStack{
                                             Image(systemName: "info.circle")
                                                 .resizable()
                                                 .frame(width: 20, height: 20, alignment: .center)
@@ -79,7 +76,6 @@ struct Home: View {
                                     }
                                 }
                             }
-
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
                                     Text("Popular on Rmitflex")
@@ -155,7 +151,7 @@ struct Home: View {
                                         .fontWeight(.semibold)
                                         .font(.system(size: 25))
                                         .foregroundColor(Color.white)
-                                        .offset(x: -150, y: 10)
+                                        .offset(x: -100, y: 10)
                                 }
                             }
                             ZStack(alignment: .leading) {
@@ -177,7 +173,7 @@ struct Home: View {
                                 }
                                 .padding(8)
                                 .onAppear() {
-                                    for index in 1...6 {
+                                    for index in 1...5 {
                                         tops.append(Picture(pictureImage: "top\(index)"))
                                     }
                                     
@@ -203,8 +199,9 @@ struct Home: View {
     }
 }
 
-struct Home_Previews: PreviewProvider {
+struct TestHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        TestHomeView()
+            .previewInterfaceOrientation(.portrait)
     }
 }
