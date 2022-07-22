@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "morbius.jpg",
+      "filename" : "IO.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "morbius@2x.jpg",
+      "filename" : "IO@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "morbius@3x.jpg",
+      "filename" : "IO@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

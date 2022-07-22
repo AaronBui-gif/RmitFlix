@@ -1,2 +1,14 @@
-
-    ["Harrison Ford", "Mark Hamill", "Carrie Fisher", "Adam Driver", "Daisy Ridley", "John Boyega", "Oscar Isaac", "Lupita Nyong'o", "Andy Serkis", "Domhnall Gleeson", "Anthony Daniels", "Peter Mayhew", "Max von Sydow"],"genres":["space", "epic", "action"]
+Bug Encounter:
+    1. NavigationLink can't click without NavigationVIew
+    2. Back button can be delete by inserting as follow: (view in NavigationBar for specific)
+                        NavigationLink{ MovieList().navigationBarTitle("")
+                            .navigationBarHidden(true)
+                            .navigationBarTitleDisplayMode(.inline)} label: {
+                        Text("Movies")
+                            .fontWeight(.semibold)
+                            .font(.system(size: 20))
+                            .foregroundColor(Color.white)
+                            .offset(y:-12)
+                    }
+    3. Button action can change view in preview but not in stimulator (Xcode bug)
+    4. 

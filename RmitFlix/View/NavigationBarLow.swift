@@ -10,14 +10,13 @@ import SwiftUI
 struct NavigationBarLow: View {
     var body: some View {
         
-        ZStack(alignment: .bottom) {
-            Color.black.ignoresSafeArea()
+
             VStack{
         HStack(alignment: .bottom, spacing: 23) {
             
-            Button {
-                
-            } label: {
+            NavigationLink{ MovieList().navigationBarTitle("")
+                    .navigationBarHidden(true)
+                    .navigationBarTitleDisplayMode(.inline)} label: {
                 VStack {
                     Image (systemName: "house")
                     .font(.title2.bold())
@@ -28,9 +27,9 @@ struct NavigationBarLow: View {
                     .foregroundColor(Color.white)
                 }
             }
-            Button {
-                
-            } label: {
+            NavigationLink{ MovieList().navigationBarTitle("")
+                    .navigationBarHidden(true)
+                    .navigationBarTitleDisplayMode(.inline)} label: {
                 VStack {
                     Image (systemName: "magnifyingglass")
                     .font(.title2.bold())
@@ -41,9 +40,9 @@ struct NavigationBarLow: View {
                     .foregroundColor(Color.white)
                 }
             }
-            Button {
-                
-            } label: {
+            NavigationLink{ MovieList().navigationBarTitle("")
+                    .navigationBarHidden(true)
+                    .navigationBarTitleDisplayMode(.inline)} label: {
                 VStack {
                     Image (systemName: "plus.square.on.square")
                     .font(.title2.bold())
@@ -54,9 +53,9 @@ struct NavigationBarLow: View {
                     .foregroundColor(Color.white)
                 }
             }
-            Button {
-                
-            } label: {
+            NavigationLink{ MovieList().navigationBarTitle("")
+                    .navigationBarHidden(true)
+                    .navigationBarTitleDisplayMode(.inline)} label: {
                 VStack {
                     Image (systemName: "arrow.down.circle")
                     .font(.title2.bold())
@@ -67,9 +66,9 @@ struct NavigationBarLow: View {
                     .foregroundColor(Color.white)
                 }
             }
-            Button {
-                
-            } label: {
+            NavigationLink{ MovieList().navigationBarTitle("")
+                    .navigationBarHidden(true)
+                    .navigationBarTitleDisplayMode(.inline)} label: {
                 VStack {
                     Image (systemName: "line.3.horizontal")
                     .font(.title2.bold())
@@ -80,7 +79,7 @@ struct NavigationBarLow: View {
                     .foregroundColor(Color.white)
                 }
             }
-        }
+        
         }
         }
     }
@@ -88,6 +87,6 @@ struct NavigationBarLow: View {
 
 struct NavigationBarLow_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationBarLow()
+        NavigationBarLow().preferredColorScheme(.dark)
     }
 }

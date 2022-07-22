@@ -11,51 +11,12 @@ struct MovieList: View {
     @State var myList = false // MyList View
     @State var tvShow = false
     var body: some View {
-        if (myList) {
-            MovieList()
-        }
-        if (tvShow) {
-            Home()
-        }
+        NavigationView{
         ZStack() {
             Color.black.ignoresSafeArea()
             VStack(spacing: 15) {
                 
-                HStack(alignment: .center, spacing: 25) {
-                    
-                    Button {
-                        
-                    } label: {
-                        Image("Icon")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 50, height: 50)
-                    }
-                    Button ( action: {
-                        self.tvShow = true
-                    }){
-                        Text("TV Shows")
-                            .fontWeight(.semibold)
-                            .font(.system(size: 20))
-                            .foregroundColor(Color.white)
-                    }
-                    Button {
-                        
-                    } label: {
-                        Text("Movies")
-                            .fontWeight(.semibold)
-                            .font(.system(size: 20))
-                            .foregroundColor(Color.white)
-                    }
-                    Button ( action: {
-                        self.myList = true
-                    }) {
-                        Text("My List")
-                            .fontWeight(.semibold)
-                            .font(.system(size: 20))
-                            .foregroundColor(Color.white)
-                    }
-                }
+                NavigationBar()
                 NavigationView {
                     
                     List(movies) { movie in
@@ -136,6 +97,9 @@ struct MovieList: View {
                     }
                 }
             }
+            }.navigationBarTitle("")
+                .navigationBarHidden(true)
+                .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
