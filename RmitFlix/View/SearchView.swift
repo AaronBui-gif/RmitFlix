@@ -44,7 +44,7 @@ struct SearchView: View {
                                         .fontWeight(.semibold)
                                         .font(.system(size: 25))
                                         .foregroundColor(Color.white)
-                                        .offset(x: -70, y: 10)
+                                        .offset(x: -10, y: 10)
                                     
                                 }
                             }
@@ -72,7 +72,7 @@ struct SearchView: View {
                             }
                         }
                     }
-                    .frame(minHeight:700, maxHeight: 7000)
+                    .frame(minHeight:550, maxHeight: 7000)
                     NavigationBarLow()
                     Image (systemName: "arrow.down.circle")
                     

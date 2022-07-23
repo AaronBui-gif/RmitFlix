@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Picture: Identifiable {
+struct Picture: Identifiable, Hashable {
     var id = UUID().uuidString
     var pictureImage: String
 }

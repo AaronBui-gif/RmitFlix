@@ -11,14 +11,11 @@ struct MovieRow: View {
     var movie: Movie
 
     var body: some View {
-        HStack {
             movie.image
                 .resizable()
-                .frame(width: 50, height: 50)
-            Text(movie.title)
+                .frame(width: 120, height: 200)
+                .cornerRadius(20)
 
-            Spacer()
-        }
     }
 }
 
@@ -28,6 +25,6 @@ struct MovieRow_Previews: PreviewProvider {
             MovieRow(movie: movies[0])
             MovieRow(movie: movies[1])
         }
-        .previewLayout(.fixed(width: 300, height: 70))
+        .previewLayout(.fixed(width: 550, height: 600))
     }
 }

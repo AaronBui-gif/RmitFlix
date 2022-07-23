@@ -18,15 +18,27 @@ struct MovieList: View {
                 
                 NavigationBar()
                 NavigationView {
-                    
-                    List(movies) { movie in
+                    ScrollView {
+                        Spacer()
+                        LazyVGrid(columns: [
+                            GridItem(.flexible(minimum: 100, maximum: 200)),
+                            GridItem(.flexible(minimum: 100, maximum: 200)),
+                            GridItem(.flexible(minimum: 100, maximum: 200))
+                        ], spacing: 12, content: {
+                    ForEach(movies) { movie in
                         NavigationLink {
                             MovieDetail(movie: movie)
                         } label: {
+                            HStack(alignment: .center) {
                             MovieRow(movie: movie)
+                            }
                         }
                     }
-                    .navigationTitle("Movies")
+                        })
+                    }.navigationBarTitle("Movies")
+                        .navigationBarHidden(true)
+                        .navigationBarTitleDisplayMode(.inline)
+                        
                 }
                 HStack(alignment: .bottom, spacing: 23) {
                     
@@ -97,7 +109,7 @@ struct MovieList: View {
                     }
                 }
             }
-            }.navigationBarTitle("")
+            }.navigationBarTitle("My List")
                 .navigationBarHidden(true)
                 .navigationBarTitleDisplayMode(.inline)
         }

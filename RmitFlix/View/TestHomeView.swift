@@ -88,25 +88,30 @@ struct TestHomeView: View {
                             }
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
-                                    Carousel(trailingSpace: 150 ,index: $currentIndex, items: pictures) {
-                                        picture in
-                                        GeometryReader { proxy in
-                                            let size = proxy.size
-                                            
-                                            Image(picture.pictureImage)
+                                    ScrollView(.horizontal) {
+                                        HStack(spacing: 12) {
+                                            ForEach(pictures, id:\.self) { picture in
+                                                NavigationLink{ TestHomeView().navigationBarTitle("")
+                                                        .navigationBarHidden(true)
+                                                        .navigationBarTitleDisplayMode(.inline)} label: {
+                                                    Image(picture.pictureImage)
                                                 .resizable()
                                                 .aspectRatio(contentMode: .fill)
-                                                .frame(width: size.width)
+                                                .frame(width: 200)
                                                 .cornerRadius(12)
                                             
                                         }
                                     }
-                                }.onAppear() {
-                                    for index in 1...5 {
-                                        pictures.append(Picture(pictureImage: "picture\(index)"))
-                                    }
+                                    
+                                }
+                                }
                                 }
                                 .padding(8)
+                                .onAppear() {
+                                for index in 1...5 {
+                                    pictures.append(Picture(pictureImage: "picture\(index)"))
+                                }
+                                }
                             }
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
@@ -114,25 +119,29 @@ struct TestHomeView: View {
                                         .fontWeight(.semibold)
                                         .font(.system(size: 25))
                                         .foregroundColor(Color.white)
-                                        .offset(x: -90, y: 370)
+                                        .offset(x: -60, y: 20) // 320 -> 120
                                 }
                                 .padding(8)
                             }
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
-                                    Carousel(trailingSpace: 150 ,index: $currentIndex, items: asias) {
-                                        asia in
-                                        GeometryReader { proxy in
-                                            let size = proxy.size
-                                            
-                                            Image(asia.pictureImage)
+                                    ScrollView(.horizontal) {
+                                        HStack(spacing: 12) {
+                                            ForEach(asias, id:\.self) { asia in
+                                                NavigationLink{ TestHomeView().navigationBarTitle("")
+                                                        .navigationBarHidden(true)
+                                                        .navigationBarTitleDisplayMode(.inline)} label: {
+                                                    Image(asia.pictureImage)
                                                 .resizable()
                                                 .aspectRatio(contentMode: .fill)
-                                                .frame(width: size.width)
+                                                .frame(width: 200)
                                                 .cornerRadius(12)
                                             
                                         }
-                                    } .padding(.vertical, 360)
+                                    }
+                                    
+                                }
+                                }
                                     
                                 }
                                 .padding(8)
@@ -141,7 +150,6 @@ struct TestHomeView: View {
                                         asias.append(Picture(pictureImage: "asia\(index)"))
                                     }
                                     
-                                    //}
                                     
                                 }
                             }
@@ -151,29 +159,32 @@ struct TestHomeView: View {
                                         .fontWeight(.semibold)
                                         .font(.system(size: 25))
                                         .foregroundColor(Color.white)
-                                        .offset(x: -100, y: 10)
+                                        .offset(x: -130, y: 20)
                                 }
                             }
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
-                                    Carousel(trailingSpace: 150 ,index: $currentIndex, items: tops) {
-                                        top in
-                                        GeometryReader { proxy in
-                                            let size = proxy.size
-                                            
-                                            Image(top.pictureImage)
+                                    ScrollView(.horizontal) {
+                                        HStack(spacing: 12) {
+                                            ForEach(tops, id:\.self) { top in
+                                                NavigationLink{ TestHomeView().navigationBarTitle("")
+                                                        .navigationBarHidden(true)
+                                                        .navigationBarTitleDisplayMode(.inline)} label: {
+                                                    Image(top.pictureImage)
                                                 .resizable()
                                                 .aspectRatio(contentMode: .fill)
-                                                .frame(width: size.width)
+                                                .frame(width: 200)
                                                 .cornerRadius(12)
                                             
                                         }
-                                    } .padding(.vertical, 200)
-                                        .offset(x: 0, y: -210)
+                                    }
+                                    
+                                }
+                                }
                                 }
                                 .padding(8)
                                 .onAppear() {
-                                    for index in 1...5 {
+                                    for index in 1...6 {
                                         tops.append(Picture(pictureImage: "top\(index)"))
                                     }
                                     
@@ -183,7 +194,7 @@ struct TestHomeView: View {
                             }
                         }
                     }
-                    .frame(minHeight:700, maxHeight: 7000)
+                    .frame(minHeight:550, maxHeight: 7000)
                     NavigationBarLow()
                     Image (systemName: "arrow.down.circle")
                     
@@ -201,7 +212,8 @@ struct TestHomeView: View {
 
 struct TestHomeView_Previews: PreviewProvider {
     static var previews: some View {
+        ZStack {
         TestHomeView()
-            .previewInterfaceOrientation(.portrait)
+        }
     }
 }

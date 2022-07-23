@@ -27,13 +27,18 @@ struct Home: View {
                         VStack{
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
+                                    NavigationLink{ Home().navigationBarTitle("")
+                                            .navigationBarHidden(true)
+                                            .navigationBarTitleDisplayMode(.inline)} label: {
                                     Image("picture2")
                                         .resizable()
-                                        .frame(width: 425, height: 600, alignment: .center)
+                                        .frame(width: 375, height: 600, alignment: .center)
+                                            }
+                                
                             }
                             }
                             ZStack(alignment: .leading) {
-                                HStack(alignment: .center, spacing: 80) {
+                                HStack(alignment: .center, spacing: 70) {
                                     Button{
                                         
                                     } label: {
@@ -86,25 +91,29 @@ struct Home: View {
                                         .fontWeight(.semibold)
                                         .font(.system(size: 25))
                                         .foregroundColor(Color.white)
-                                        .offset(x: -70, y: 10)
+                                        .offset(x: -40, y: 10)
                                     
                                 }
                             }
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
+                                    //ScrollView(.horizontal) {
                                     Carousel(trailingSpace: 150 ,index: $currentIndex, items: pictures) {
                                         picture in
                                         GeometryReader { proxy in
                                             let size = proxy.size
-                                            
+                                            NavigationLink{ Home().navigationBarTitle("")
+                                                    .navigationBarHidden(true)
+                                                    .navigationBarTitleDisplayMode(.inline)} label: {
                                             Image(picture.pictureImage)
                                                 .resizable()
                                                 .aspectRatio(contentMode: .fill)
                                                 .frame(width: size.width)
                                                 .cornerRadius(12)
-                                            
+                                                }
                                         }
                                     }
+                               // }
                                 }.onAppear() {
                                     for index in 1...5 {
                                         pictures.append(Picture(pictureImage: "picture\(index)"))
@@ -118,7 +127,7 @@ struct Home: View {
                                         .fontWeight(.semibold)
                                         .font(.system(size: 25))
                                         .foregroundColor(Color.white)
-                                        .offset(x: -90, y: 370)
+                                        .offset(x: -60, y: 320)
                                 }
                                 .padding(8)
                             }
@@ -136,7 +145,7 @@ struct Home: View {
                                                 .cornerRadius(12)
                                             
                                         }
-                                    } .padding(.vertical, 360)
+                                    } .padding(.vertical, 310)
                                     
                                 }
                                 .padding(8)
@@ -145,7 +154,6 @@ struct Home: View {
                                         asias.append(Picture(pictureImage: "asia\(index)"))
                                     }
                                     
-                                    //}
                                     
                                 }
                             }
@@ -155,7 +163,7 @@ struct Home: View {
                                         .fontWeight(.semibold)
                                         .font(.system(size: 25))
                                         .foregroundColor(Color.white)
-                                        .offset(x: -150, y: 10)
+                                        .offset(x: -130, y: -10)
                                 }
                             }
                             ZStack(alignment: .leading) {
@@ -172,8 +180,8 @@ struct Home: View {
                                                 .cornerRadius(12)
                                             
                                         }
-                                    } .padding(.vertical, 200)
-                                        .offset(x: 0, y: -210)
+                                    } .padding(.vertical, 160)
+                                        .offset(x: 0, y: -190)
                                 }
                                 .padding(8)
                                 .onAppear() {
@@ -187,7 +195,7 @@ struct Home: View {
                             }
                         }
                     }
-                    .frame(minHeight:700, maxHeight: 7000)
+                    .frame(minHeight:550, maxHeight: 7000)
                     NavigationBarLow()
                     Image (systemName: "arrow.down.circle")
                     

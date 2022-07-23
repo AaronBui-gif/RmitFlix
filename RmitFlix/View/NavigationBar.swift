@@ -11,8 +11,8 @@ struct NavigationBar: View {
     var body: some View {
             
             VStack(alignment: .center,spacing: 15) {
-                HStack(alignment: .bottom, spacing: 45) {
-                    NavigationLink{ Home().navigationBarTitle("")
+                HStack(alignment: .center, spacing: 20) {
+                    NavigationLink{ TestHomeView().navigationBarTitle("")
                             .navigationBarHidden(true)
                             .navigationBarTitleDisplayMode(.inline)} label: {
                         Image("Icon")
@@ -27,7 +27,7 @@ struct NavigationBar: View {
                             .fontWeight(.semibold)
                             .font(.system(size: 20))
                             .foregroundColor(Color.white)
-                            .offset(y:-12)
+                            
 
                     }
                     NavigationLink{ MovieList().navigationBarTitle("")
@@ -37,7 +37,7 @@ struct NavigationBar: View {
                             .fontWeight(.semibold)
                             .font(.system(size: 20))
                             .foregroundColor(Color.white)
-                            .offset(y:-12)
+                            
                     }
                     NavigationLink{ MovieList().navigationBarTitle("")
                             .navigationBarHidden(true)
@@ -46,7 +46,7 @@ struct NavigationBar: View {
                             .fontWeight(.semibold)
                             .font(.system(size: 20))
                             .foregroundColor(Color.white)
-                            .offset(y:-12)
+                            
                     }
                 }
         
