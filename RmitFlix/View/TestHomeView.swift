@@ -28,10 +28,15 @@ struct TestHomeView: View {
                         VStack{
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
+                                    NavigationLink{ Home().navigationBarTitle("")
+                                            .navigationBarHidden(true)
+                                            .navigationBarTitleDisplayMode(.inline)} label: {
                                     Image("picture2")
                                         .resizable()
-                                        .frame(width: 425, height: 500, alignment: .center)
-                                }
+                                        .frame(width: 375, height: 600, alignment: .center)
+                                            }
+                                
+                            }
                             }
                             ZStack(alignment: .leading) {
                                 HStack(alignment: .center, spacing: 80) {

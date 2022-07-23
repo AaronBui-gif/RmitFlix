@@ -18,6 +18,8 @@ struct MovieList: View {
                 
                 NavigationBar()
                 NavigationView {
+                    ZStack {
+                        Color.black.ignoresSafeArea()
                     ScrollView {
                         Spacer()
                         LazyVGrid(columns: [
@@ -38,7 +40,7 @@ struct MovieList: View {
                     }.navigationBarTitle("Movies")
                         .navigationBarHidden(true)
                         .navigationBarTitleDisplayMode(.inline)
-                        
+                    }
                 }
                 HStack(alignment: .bottom, spacing: 23) {
                     
