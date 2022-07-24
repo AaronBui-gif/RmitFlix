@@ -30,21 +30,20 @@
    },
    {
       "id":2,
-      "title":"Red Notice",
+      "title":"Arcane",
       "year":2021,
       "cast":[
-         "Dwayne Johnson",
-         "Ryan Reynolds",
-         "Gal Gadot",
-         "Ritu Arya",
-         "Chris Diamantopoulos"
+         "Hailee Steinfeld",
+         "Kevin Alejandro",
+         "Jason Spisak"
       ],
       "genres":[
-         "comedy",
-         "action"
+         "animation",
+         "action",
+         "adventure"
       ],
-      "summary":"An Interpol-issued red notice is a global alert to hunt and capture the world’s most wanted. But when a daring heist brings together the FBI’s top profiler (Johnson) and two rival criminals (Gadot, Reynolds), there’s no telling what will happen.",
-      "imageName":"picture2"
+      "summary":"Set in utopian Piltover and the oppressed underground of Zaun, the story follows the origins of two iconic League champions-and the power that will tear them apart.",
+      "imageName":"Arcane"
    },
    {
       "id":3,

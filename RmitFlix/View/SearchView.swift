@@ -50,23 +50,23 @@ struct SearchView: View {
                             }
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
-                                    Carousel(trailingSpace: 150 ,index: $currentIndex, items: pictures) {
-                                        picture in
-                                        GeometryReader { proxy in
-                                            let size = proxy.size
-                                            
-                                            Image(picture.pictureImage)
+                                    ScrollView(.horizontal) {
+                                        HStack(spacing: 12) {
+                                            ForEach(movies, id:\.self) { movie in
+                                                NavigationLink{ MovieDetail(movie: movie)} label: {
+                                                    Image(movie.imageName)
                                                 .resizable()
                                                 .aspectRatio(contentMode: .fill)
-                                                .frame(width: size.width)
+                                                .frame(width: 200)
                                                 .cornerRadius(12)
-                                            
-                                        }
+                                                
+                                                        }
+                                               
                                     }
-                                }.onAppear() {
-                                    for index in 1...5 {
-                                        pictures.append(Picture(pictureImage: "picture\(index)"))
-                                    }
+
+                                    
+                                }
+                                }
                                 }
                                 .padding(8)
                             }

@@ -14,6 +14,7 @@ var movies: [Movie] = load("movies.json")
 var populars: [Movie] = load("populars.json")
 var asias: [Movie] = load("asias.json")
 var tops: [Movie] = load("tops.json")
+var comings: [Movie] = load("comingsoon.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

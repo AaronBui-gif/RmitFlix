@@ -298,6 +298,78 @@
       ],
       "summary":"Watching the world go by from her living room window, heartbroken Anna sets her sights on a handsome new neighbour until she witnesses a gruesome murder.",
       "imageName":"top6"
+   },
+   {
+      "id":15,
+      "title":"The Witcher",
+      "year":2019,
+      "cast":[
+          "Henry Cavill",
+          "Anya Chalotra",
+          "Freya Allan",
+          "Joey Batey"
+      ],
+      "genres":[
+          "action",
+          "adventure",
+          "fantasy",
+          "drama"
+      ],
+      "summary":"The witcher Geralt, a mutated monster hunter, struggles to find his place in a world in which people often prove more wicked than beasts.",
+      "imageName":"TheWitcher"
+   },
+   {
+      "id":16,
+      "title":"Vikings Vahalla",
+      "year":2022,
+      "cast":[
+          "Sam Corlett",
+          "Leo Suter",
+          "Jóhannes Haukur Jóhannesson"
+      ],
+      "genres":[
+          "action",
+          "adventure",
+          "drama"
+      ],
+      "summary":"Follow-up series to 'Vikings' set 100 years afterward and centering on the adventures of Leif Erikson, Freydis, Harald Hardrada and the Norman King William the Conqueror.",
+      "imageName":"VikingVahalla"
+   },
+   {
+      "id":17,
+      "title":"Riverdale",
+      "year":2017,
+      "cast":[
+          "Lili Reinhart",
+          "Cole Sprouse",
+          "Camila Mendes",
+          "KJ Apa"
+      ],
+      "genres":[
+          "teen drama",
+          "horror",
+          "mystery",
+          "supernatural"
+      ],
+      "summary":"Archie, Betty, Jughead and Veronica tackle being teenagers in a town that is rife with sinister happenings and blood-thirsty criminals.",
+      "imageName":"Riverdale"
+   },
+   {
+      "id":18,
+      "title":"Army Of The Dead",
+      "year":2021,
+      "cast":[
+          "Dave Bautista",
+          "Ella Purnell",
+          "Ana de la Reguera"
+      ],
+      "genres":[
+          "action",
+          "horror",
+          "crime"
+      ],
+      "summary":"Following a zombie outbreak in Las Vegas, a group of mercenaries take the ultimate gamble, venturing into the quarantine zone to pull off the greatest heist ever attempted.",
+      "imageName":"ArmyOfTheDead"
    }
    
 ]

@@ -14,7 +14,7 @@ struct NavigationBarLow: View {
             VStack{
         HStack(alignment: .bottom, spacing: 23) {
             
-            NavigationLink{ MovieList().navigationBarTitle("")
+            NavigationLink{ TestHomeView().navigationBarTitle("")
                     .navigationBarHidden(true)
                     .navigationBarTitleDisplayMode(.inline)} label: {
                 VStack {
@@ -27,7 +27,7 @@ struct NavigationBarLow: View {
                     .foregroundColor(Color.white)
                 }
             }
-            NavigationLink{ MovieList().navigationBarTitle("")
+            NavigationLink{ SearchView().navigationBarTitle("")
                     .navigationBarHidden(true)
                     .navigationBarTitleDisplayMode(.inline)} label: {
                 VStack {

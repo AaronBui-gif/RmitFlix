@@ -38,8 +38,8 @@ struct MovieList: View {
                     }
                         })
                     }.navigationBarTitle("Movies")
-                        .navigationBarHidden(true)
-                        .navigationBarTitleDisplayMode(.inline)
+                        
+                    .navigationBarTitleDisplayMode(.inline)
                     }
                 }
                 HStack(alignment: .bottom, spacing: 23) {
@@ -111,8 +111,9 @@ struct MovieList: View {
                     }
                 }
             }
-            }.navigationBarTitle("My List")
-                .navigationBarHidden(true)
+            }.navigationBarTitle("")
+                .foregroundColor(.white)
+                
                 .navigationBarTitleDisplayMode(.inline)
         }
     }
