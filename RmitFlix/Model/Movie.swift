@@ -16,7 +16,7 @@ struct Movie: Hashable, Codable, Identifiable {
     let genres:[String]
     let summary: String
     
-    private var imageName: String
+    public var imageName: String
     var image: Image {
         Image(imageName)
     }

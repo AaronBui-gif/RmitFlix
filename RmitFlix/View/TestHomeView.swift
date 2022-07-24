@@ -9,10 +9,8 @@ import SwiftUI
 
 struct TestHomeView: View {
     @State var currentIndex: Int = 0
+    @State var i: Int = 0
     
-    @State var pictures: [Picture] = []
-    @State var asias: [Picture] = []
-    @State var tops: [Picture] = []
     var body: some View {
         NavigationView{
             ZStack{
@@ -28,9 +26,7 @@ struct TestHomeView: View {
                         VStack{
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
-                                    NavigationLink{ Home().navigationBarTitle("")
-                                            .navigationBarHidden(true)
-                                            .navigationBarTitleDisplayMode(.inline)} label: {
+                                    NavigationLink{ MovieDetail(movie: movies[1])} label: {
                                     Image("picture2")
                                         .resizable()
                                         .frame(width: 375, height: 600, alignment: .center)
@@ -95,28 +91,23 @@ struct TestHomeView: View {
                                 VStack(alignment: .leading) {
                                     ScrollView(.horizontal) {
                                         HStack(spacing: 12) {
-                                            ForEach(pictures, id:\.self) { picture in
-                                                NavigationLink{ TestHomeView().navigationBarTitle("")
-                                                        .navigationBarHidden(true)
-                                                        .navigationBarTitleDisplayMode(.inline)} label: {
-                                                    Image(picture.pictureImage)
+                                            ForEach(populars, id:\.self) { popular in
+                                                NavigationLink{ MovieDetail(movie: popular)} label: {
+                                                    Image(popular.imageName)
                                                 .resizable()
                                                 .aspectRatio(contentMode: .fill)
                                                 .frame(width: 200)
                                                 .cornerRadius(12)
-                                            
-                                        }
+                                                
+                                                        }
+                                               
                                     }
+
                                     
                                 }
                                 }
                                 }
                                 .padding(8)
-                                .onAppear() {
-                                for index in 1...5 {
-                                    pictures.append(Picture(pictureImage: "picture\(index)"))
-                                }
-                                }
                             }
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
@@ -133,30 +124,20 @@ struct TestHomeView: View {
                                     ScrollView(.horizontal) {
                                         HStack(spacing: 12) {
                                             ForEach(asias, id:\.self) { asia in
-                                                NavigationLink{ TestHomeView().navigationBarTitle("")
-                                                        .navigationBarHidden(true)
-                                                        .navigationBarTitleDisplayMode(.inline)} label: {
-                                                    Image(asia.pictureImage)
+                                                NavigationLink{ MovieDetail(movie: asia)} label: {
+                                                    Image(asia.imageName)
                                                 .resizable()
                                                 .aspectRatio(contentMode: .fill)
                                                 .frame(width: 200)
                                                 .cornerRadius(12)
-                                            
-                                        }
+                                                
+                                                        }
+                                               
                                     }
-                                    
                                 }
                                 }
-                                    
                                 }
                                 .padding(8)
-                                .onAppear() {
-                                    for index in 1...5 {
-                                        asias.append(Picture(pictureImage: "asia\(index)"))
-                                    }
-                                    
-                                    
-                                }
                             }
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
@@ -167,36 +148,30 @@ struct TestHomeView: View {
                                         .offset(x: -130, y: 20)
                                 }
                             }
+                            
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
                                     ScrollView(.horizontal) {
                                         HStack(spacing: 12) {
                                             ForEach(tops, id:\.self) { top in
-                                                NavigationLink{ TestHomeView().navigationBarTitle("")
-                                                        .navigationBarHidden(true)
-                                                        .navigationBarTitleDisplayMode(.inline)} label: {
-                                                    Image(top.pictureImage)
+                                                NavigationLink{ MovieDetail(movie: top)} label: {
+                                                    Image(top.imageName)
                                                 .resizable()
                                                 .aspectRatio(contentMode: .fill)
                                                 .frame(width: 200)
                                                 .cornerRadius(12)
-                                            
-                                        }
+                                                
+                                                        }
+                                               
                                     }
                                     
                                 }
                                 }
                                 }
                                 .padding(8)
-                                .onAppear() {
-                                    for index in 1...6 {
-                                        tops.append(Picture(pictureImage: "top\(index)"))
-                                    }
-                                    
-                                    //}
-                                    
-                                }
                             }
+                            
+                            
                         }
                     }
                     .frame(minHeight:550, maxHeight: 7000)
@@ -213,6 +188,7 @@ struct TestHomeView: View {
         }
         
     }
+    
 }
 
 struct TestHomeView_Previews: PreviewProvider {

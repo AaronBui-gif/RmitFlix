@@ -1,0 +1,59 @@
+[
+    {
+       "id":1,
+       "title":"Avengers Endgame",
+       "year":2019,
+       "cast":[
+          "Robert Downey Jr.",
+          "Chris Hemsworth",
+          "Chris Evans",
+          "Scarlet Johansson",
+          "Mark Ruffalo",
+          "Jeremy Renner",
+          "Brie Larson"
+       ],
+       "genres":[
+          "superhero",
+          "action"
+       ],
+       "summary":"After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+       "imageName":"asia1"
+    },
+    {
+       "id":2,
+       "title":"IO",
+       "year":2019,
+       "cast":[
+          "Margaret Qualley",
+          "Anthony Mackie",
+          "Danny Huston",
+          "Emma Fitzgerald",
+          "Tom Payne",
+          "Teagan Johnson",
+          "Justin Andrew Jamieson"
+       ],
+       "genres":[
+          "science fiction",
+          "action"
+       ],
+       "summary":"As a young scientist searches for a way to save a dying Earth, she finds a connection with a man who's racing to catch the last shuttle off the planet.",
+       "imageName":"asia2"
+    },
+    {
+       "id":3,
+       "title":"Close",
+       "year":2019,
+       "cast":[
+          "Noomi Rapace",
+          "Olivia Jewson",
+          "Abdellatif Chaouqi"
+       ],
+       "genres":[
+          "drama",
+          "action",
+          "thriller"
+       ],
+       "summary":"A female bodyguard is hired to protect an heiress on the run from assassins.",
+       "imageName":"asia3"
+    }
+]

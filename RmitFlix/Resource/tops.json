@@ -1,0 +1,38 @@
+[
+    {
+       "id":1,
+       "title":"Stranger Things 3",
+       "year":2019,
+       "cast":[
+          " Winona Ryder",
+          "David Harbour",
+          "Finn Wolfhard",
+          "Millie Bobby Brown",
+          "Gaten Matarazzo",
+          "Caleb McLaughlin",
+          "Noah Schnapp",
+          "Sadie Sink",
+          "Natalia Dyer",
+          "Charlie Heaton",
+          "Joe Keery",
+          "Dacre Montgomery",
+          "Maya Hawke",
+          "Priah Ferguson",
+          "Cara Buono",
+          "Brett Gelman",
+          "Francesca Reale",
+          "Cary Elwes",
+          "Alec Utgoff",
+          "Andrey Ivchenko"
+       ],
+       "genres":[
+          "drama",
+          "action",
+          "thriller",
+          "science fiction",
+          "horror"
+       ],
+       "summary":"In the summer of 1985 in Hawkins, the newly opened Starcourt Mall has become the center of attention in the town, causing other stores to close their business due to its popularity. Hopper disapproves of Eleven and Mike's relationship. Joyce considers moving out of Hawkins with her children. Joyce enlists the help of Hopper to investigate the reason behind her magnet losing its magnetism. Will begins having premonition regarding the Upside Down, despite Eleven having closed the portal. The Mind Flayer takes control of Billy's mind leaving Dustin and friends no choice but to battle him.",
+       "imageName":"top1"
+    }
+]

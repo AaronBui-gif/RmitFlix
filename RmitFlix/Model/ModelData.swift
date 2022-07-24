@@ -11,6 +11,9 @@ import Foundation
 
 // Replace with`Initialize here` Comment above
 var movies: [Movie] = load("movies.json")
+var populars: [Movie] = load("populars.json")
+var asias: [Movie] = load("asias.json")
+var tops: [Movie] = load("tops.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

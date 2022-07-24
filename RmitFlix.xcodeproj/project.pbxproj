@@ -11,6 +11,7 @@
 		75857AAE2887EBC1008BE338 /* TestHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75857AAD2887EBC1008BE338 /* TestHomeView.swift */; };
 		75857AB0288A7DE7008BE338 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75857AAF288A7DE7008BE338 /* SearchView.swift */; };
 		75857AB2288A8562008BE338 /* FilteringList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75857AB1288A8562008BE338 /* FilteringList.swift */; };
+		75857AB8288D6673008BE338 /* populars.json in Resources */ = {isa = PBXBuildFile; fileRef = 75857AB7288D6673008BE338 /* populars.json */; };
 		75969522288687C200D85052 /* RmitFlixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75969521288687C200D85052 /* RmitFlixApp.swift */; };
 		75969524288687C300D85052 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75969523288687C300D85052 /* ContentView.swift */; };
 		75969526288687C500D85052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75969525288687C500D85052 /* Assets.xcassets */; };
@@ -30,6 +31,8 @@
 		7596954D2886939F00D85052 /* note.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7596954C2886939F00D85052 /* note.txt */; };
 		7596954F28869FFD00D85052 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596954E28869FFD00D85052 /* NavigationBar.swift */; };
 		759695512886A02000D85052 /* NavigationBarLow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759695502886A02000D85052 /* NavigationBarLow.swift */; };
+		7597D2ED288D6CB000FADB82 /* asias.json in Resources */ = {isa = PBXBuildFile; fileRef = 7597D2EC288D6CB000FADB82 /* asias.json */; };
+		7597D2EF288D6DA900FADB82 /* tops.json in Resources */ = {isa = PBXBuildFile; fileRef = 7597D2EE288D6DA900FADB82 /* tops.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,7 @@
 		75857AAD2887EBC1008BE338 /* TestHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHomeView.swift; sourceTree = "<group>"; };
 		75857AAF288A7DE7008BE338 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		75857AB1288A8562008BE338 /* FilteringList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringList.swift; sourceTree = "<group>"; };
+		75857AB7288D6673008BE338 /* populars.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = populars.json; sourceTree = "<group>"; };
 		7596951E288687C200D85052 /* RmitFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RmitFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75969521288687C200D85052 /* RmitFlixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RmitFlixApp.swift; sourceTree = "<group>"; };
 		75969523288687C300D85052 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 		7596954C2886939F00D85052 /* note.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = note.txt; sourceTree = "<group>"; };
 		7596954E28869FFD00D85052 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		759695502886A02000D85052 /* NavigationBarLow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarLow.swift; sourceTree = "<group>"; };
+		7597D2EC288D6CB000FADB82 /* asias.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = asias.json; sourceTree = "<group>"; };
+		7597D2EE288D6DA900FADB82 /* tops.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tops.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,9 @@
 			children = (
 				7596954428868A9500D85052 /* movies.json */,
 				7596954C2886939F00D85052 /* note.txt */,
+				75857AB7288D6673008BE338 /* populars.json */,
+				7597D2EC288D6CB000FADB82 /* asias.json */,
+				7597D2EE288D6DA900FADB82 /* tops.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -207,9 +216,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7596954D2886939F00D85052 /* note.txt in Resources */,
+				7597D2EF288D6DA900FADB82 /* tops.json in Resources */,
 				7596954528868A9500D85052 /* movies.json in Resources */,
 				75969529288687C500D85052 /* Preview Assets.xcassets in Resources */,
+				7597D2ED288D6CB000FADB82 /* asias.json in Resources */,
 				75969526288687C500D85052 /* Assets.xcassets in Resources */,
+				75857AB8288D6673008BE338 /* populars.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
