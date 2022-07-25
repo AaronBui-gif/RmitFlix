@@ -1,14 +1,13 @@
 //
-//  ComingSoonView.swift
+//  TVShowsView.swift
 //  RmitFlix
 //
 //  Created by Huy Bui Thanh on 24/07/2022.
 //
 
 import SwiftUI
-import AVKit
 
-struct ComingSoonView: View {
+struct TVShowsView: View {
     @StateObject var videoManager = VideoManager()
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     
@@ -56,11 +55,10 @@ struct ComingSoonView: View {
         } // NavigationView
         
     }
-    
 }
 
-struct ComingSoonView_Previews: PreviewProvider {
+struct TVShowsView_Previews: PreviewProvider {
     static var previews: some View {
-        ComingSoonView()
+        TVShowsView()
     }
 }

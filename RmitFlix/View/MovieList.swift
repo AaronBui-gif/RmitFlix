@@ -8,6 +8,21 @@
 import SwiftUI
 
 struct MovieList: View {
+    @Environment(\.presentationMode) var presentationMode:
+    Binding <PresentationMode>
+    
+    var BackButton: some View { Button(action: {
+        self.presentationMode.wrappedValue.dismiss()
+    }) {
+        HStack {
+            Image("backImage")
+                .aspectRatio(contentMode: .fit)
+                .foregroundColor(.white)
+            Text("Back")
+        }
+    }
+    }
+    
     @State var myList = false // MyList View
     @State var tvShow = false
     var body: some View {
@@ -112,9 +127,9 @@ struct MovieList: View {
                 }
             }
             }.navigationBarTitle("")
-                .foregroundColor(.white)
-                
                 .navigationBarTitleDisplayMode(.inline)
+                .navigationBarBackButtonHidden(true)
+                .navigationBarItems(leading: BackButton)
         }
     }
 }
@@ -124,3 +139,4 @@ struct MovieList_Previews: PreviewProvider {
     }
     
 }
+

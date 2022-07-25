@@ -27,12 +27,12 @@ struct TestHomeView: View {
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
                                     NavigationLink{ MovieDetail(movie: movies[1])} label: {
-                                    Image("picture2")
-                                        .resizable()
-                                        .frame(width: 375, height: 600, alignment: .center)
-                                            }
-                                
-                            }
+                                        Image("picture2")
+                                            .resizable()
+                                            .frame(width: 375, height: 600, alignment: .center)
+                                    }
+                                    
+                                }
                             }
                             ZStack(alignment: .leading) {
                                 HStack(alignment: .center, spacing: 80) {
@@ -52,15 +52,19 @@ struct TestHomeView: View {
                                     Button{
                                         
                                     } label: {
-                                        HStack{
-                                            Image(systemName: "play")
+                                        HStack(spacing: 20){
+                                            Image(systemName: "play.fill")
                                                 .resizable()
                                                 .frame(width: 20, height: 20, alignment: .center)
-                                                .foregroundColor(.white)
+                                                .foregroundColor(.black)
                                             Text("Play")
-                                                .foregroundColor(.white)
+                                                .font(.title2)
+                                                .fontWeight(.semibold)
+                                                .foregroundColor(.black)
                                         }
                                     }
+                                    .frame(width: 120, height:40)
+                                    .background(Color.white)
                                     
                                     // Info Button
                                     Button{
@@ -94,18 +98,18 @@ struct TestHomeView: View {
                                             ForEach(populars, id:\.self) { popular in
                                                 NavigationLink{ MovieDetail(movie: popular)} label: {
                                                     Image(popular.imageName)
-                                                .resizable()
-                                                .aspectRatio(contentMode: .fill)
-                                                .frame(width: 200)
-                                                .cornerRadius(12)
+                                                        .resizable()
+                                                        .aspectRatio(contentMode: .fill)
+                                                        .frame(width: 200)
+                                                        .cornerRadius(12)
+                                                    
+                                                }
                                                 
-                                                        }
-                                               
+                                            }
+                                            
+                                            
+                                        }
                                     }
-
-                                    
-                                }
-                                }
                                 }
                                 .padding(8)
                             }
@@ -126,16 +130,16 @@ struct TestHomeView: View {
                                             ForEach(asias, id:\.self) { asia in
                                                 NavigationLink{ MovieDetail(movie: asia)} label: {
                                                     Image(asia.imageName)
-                                                .resizable()
-                                                .aspectRatio(contentMode: .fill)
-                                                .frame(width: 200)
-                                                .cornerRadius(12)
+                                                        .resizable()
+                                                        .aspectRatio(contentMode: .fill)
+                                                        .frame(width: 200)
+                                                        .cornerRadius(12)
+                                                    
+                                                }
                                                 
-                                                        }
-                                               
+                                            }
+                                        }
                                     }
-                                }
-                                }
                                 }
                                 .padding(8)
                             }
@@ -156,17 +160,17 @@ struct TestHomeView: View {
                                             ForEach(tops, id:\.self) { top in
                                                 NavigationLink{ MovieDetail(movie: top)} label: {
                                                     Image(top.imageName)
-                                                .resizable()
-                                                .aspectRatio(contentMode: .fill)
-                                                .frame(width: 200)
-                                                .cornerRadius(12)
+                                                        .resizable()
+                                                        .aspectRatio(contentMode: .fill)
+                                                        .frame(width: 200)
+                                                        .cornerRadius(12)
+                                                    
+                                                }
                                                 
-                                                        }
-                                               
+                                            }
+                                            
+                                        }
                                     }
-                                    
-                                }
-                                }
                                 }
                                 .padding(8)
                             }
@@ -194,7 +198,7 @@ struct TestHomeView: View {
 struct TestHomeView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
-        TestHomeView()
+            TestHomeView()
         }
     }
 }

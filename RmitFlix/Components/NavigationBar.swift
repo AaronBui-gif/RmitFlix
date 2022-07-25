@@ -20,7 +20,7 @@ struct NavigationBar: View {
                             .scaledToFit()
                             .frame(width: 50, height: 50)
                     }
-                    NavigationLink{ TestHomeView().navigationBarTitle("")
+                    NavigationLink{ TVShowsView().navigationBarTitle("")
                             .navigationBarHidden(true)
                             .navigationBarTitleDisplayMode(.inline)} label: {
                         Text("TV Shows")

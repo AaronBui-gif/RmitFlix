@@ -8,6 +8,22 @@
 import SwiftUI
 
 struct MovieDetail: View {
+    @Environment(\.presentationMode) var presentationMode:
+    Binding <PresentationMode>
+    
+    var BackButton: some View { Button(action: {
+        self.presentationMode.wrappedValue.dismiss()
+    }) {
+        HStack{
+            Image(systemName: "arrowshape.backward.fill")
+                .aspectRatio(contentMode: .fit)
+                .foregroundColor(.white)
+            Text("Back")
+                .foregroundColor(.white)
+        }
+    }
+    }
+    
     var movie: Movie
     
     var body: some View {
@@ -15,57 +31,98 @@ struct MovieDetail: View {
             Color.black.ignoresSafeArea()
             ScrollView {
                 Group{
-                movie.image
-                    .offset(y: -10)
-                    .frame(width: 400, height: 300)
-                    .padding(.bottom)
-                
-                VStack(alignment: .leading, spacing: 10) {
-                    HStack(alignment: .center, spacing: 250){
-                        Button(action: {
+                    Image(movie.imageName)
+                        .resizable()
+                        .frame(width: 250, height: 300)
+                        .offset(y: -10)
+                    
+                    
+                    VStack(alignment: .leading, spacing: 10) {
+//                        HStack(alignment: .center, spacing: 250){
+//                            Button(action: {
+//
+//
+//                            }, label: {
+//                                HStack(){
+//                                    Image(systemName: "play")
+//                                        .foregroundColor(Color.white)
+//                                    Text("Play")
+//                                        .foregroundColor(Color.white)
+//                                        .frame(width: 40, height: 40, alignment: .center)
+//                                }
+//                            })
+//                            .frame(width: 40, height: 40, alignment: .center)
+//                            .offset(x:30)
+//                            Button(action: {
+//
+//
+//                            }, label: {
+//                                HStack(){
+//                                    Image(systemName: "square.and.arrow.down")
+//                                        .foregroundColor(Color.white)
+//                                    Text("Save")
+//                                        .foregroundColor(Color.white)
+//                                        .frame(width: 40, height: 40, alignment: .center)
+//                                }
+//                            })
+//                            .frame(width: 40, height: 40, alignment: .center)
+//                        }
+                        HStack(alignment: .center, spacing: 0) {
+                        Button{
                             
-                            
-                        }, label: {
-                            HStack(){
-                                Image(systemName: "play")
-                                    .foregroundColor(Color.white)
+                        } label: {
+                            HStack(alignment: .center, spacing: 20){
+                                Image(systemName: "play.fill")
+                                    .resizable()
+                                    .frame(width: 20, height: 20, alignment: .center)
+                                    .foregroundColor(.black)
                                 Text("Play")
-                                    .foregroundColor(Color.white)
-                                    .frame(width: 40, height: 40, alignment: .center)
+                                    .font(.title2)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.black)
                             }
-                        })
-                        .frame(width: 40, height: 40, alignment: .center)
-                        .offset(x:30)
-                        Button(action: {
+                        }
+                        .frame(width: 300, height:40)
+                        .background(Color.white)
+                        }
+                        .offset(x: 25)
+                        HStack(alignment: .center, spacing: 0) {
+                        Button{
                             
-                            
-                        }, label: {
-                            HStack(){
+                        } label: {
+                            HStack(alignment: .center, spacing: 20){
                                 Image(systemName: "square.and.arrow.down")
-                                    .foregroundColor(Color.white)
-                                Text("Save")
-                                    .foregroundColor(Color.white)
-                                    .frame(width: 40, height: 40, alignment: .center)
+                                    .resizable()
+                                    .frame(width: 20, height: 20, alignment: .center)
+                                    .foregroundColor(.black)
+                                Text("Download")
+                                    .font(.title2)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.black)
                             }
-                        })
-                        .frame(width: 40, height: 40, alignment: .center)
+                        }
+                        .frame(width: 300, height:40)
+                        .background(Color.gray)
+                        }
+                        .offset(x: 25)
+                    
+                        Divider()
+                        Text("About \(movie.title)")
+                            .font(.title2)
+                            .foregroundColor(Color.white)
+                            .offset(x: 10)
+                        Text(movie.summary)
+                            .foregroundColor(Color.white)
+                            .offset(x: 10)
                     }
-                    Text(movie.title)
-                        .font(.title)
-                        .foregroundColor(Color.white)
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                        .offset(x: 10)
-                    Divider()
-                }
                     Text("Cast")
                         .font(.title2)
                         .foregroundColor(Color.white)
                         .offset(x: 10)
                     ForEach(movie.cast.indices, id: \.self) {
                         Text(self.movie.cast[$0])
-                        .foregroundColor(Color.white)
-                        .offset(x: 10)
+                            .foregroundColor(Color.white)
+                            .offset(x: 10)
                         
                     }
                     Divider()
@@ -75,24 +132,19 @@ struct MovieDetail: View {
                         .offset(x: 10)
                     ForEach(movie.genres.indices, id: \.self) {
                         Text(self.movie.genres[$0])
-                        .foregroundColor(Color.white)
-                        .offset(x: 10)
+                            .foregroundColor(Color.white)
+                            .offset(x: 10)
                         
                     }
                     Divider()
-                    Text("About \(movie.title)")
-                        .font(.title2)
-                        .foregroundColor(Color.white)
-                        .offset(x: 10)
-                    Text(movie.summary)
-                        .foregroundColor(Color.white)
-                        .offset(x: 10)
                 }
                 .padding()
                 
             }
             .navigationTitle(movie.title)
             .navigationBarTitleDisplayMode(.inline)
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading: BackButton)
         }
     }
 }
@@ -101,11 +153,4 @@ struct MovieDetail_Previews: PreviewProvider {
     static var previews: some View {
         MovieDetail(movie: movies[0])
     }
-}
-
-func getCast(casts: [String]) -> String?{
-    for cast in casts {
-        return cast
-    }
-    return nil
 }

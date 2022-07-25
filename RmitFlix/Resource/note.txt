@@ -12,3 +12,15 @@ Bug Encounter:
                     }
     3. Button action can change view in preview but not in stimulator (Xcode bug)
     4. 
+
+https://www.themoviedb.org/settings/api
+https://developers.themoviedb.org/3/configuration/get-api-configuration
+https://github.com/rphlfc/Netflix
+// API KEY
+c3a74ff079b07e7cc2777a6003720b62
+
+// Request API
+https://api.themoviedb.org/3/movie/550?api_key=c3a74ff079b07e7cc2777a6003720b62
+
+API Read Access Token (v4 auth)
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjM2E3NGZmMDc5YjA3ZTdjYzI3NzdhNjAwMzcyMGI2MiIsInN1YiI6IjYyZGQ3YjI3ODUwMDVkMGI2MmQyZmVmNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Ia9h49JQgkLXYIUXMeY4eqtmOC1fPDfekBTTJScgKBg
