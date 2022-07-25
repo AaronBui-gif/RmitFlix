@@ -86,6 +86,7 @@ struct MovieDetail: View {
                             .foregroundColor(Color.white)
                             .offset(x: 10)
                     }
+                    
                     Text("Cast")
                         .font(.title2)
                         .foregroundColor(Color.white)
@@ -96,16 +97,20 @@ struct MovieDetail: View {
                             .offset(x: 10)
                         
                     }
+                    
                     Divider()
+                    HStack {
                     Text("Genre")
-                        .font(.title2)
                         .foregroundColor(Color.white)
                         .offset(x: 10)
+                    
                     ForEach(movie.genres.indices, id: \.self) {
+                        
                         Text(self.movie.genres[$0])
                             .foregroundColor(Color.white)
                             .offset(x: 10)
                         
+                    }
                     }
                     Divider()
                 }
