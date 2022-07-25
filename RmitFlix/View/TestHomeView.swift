@@ -22,7 +22,7 @@ struct TestHomeView: View {
                     
                     
                     NavigationBar()
-                        .offset(y:10)
+                        .offset(y:13)
                     ScrollView {
                         VStack{
                             ZStack(alignment: .leading) {
@@ -181,6 +181,7 @@ struct TestHomeView: View {
                         } // VStack
                     } // Scroll View
                     .frame(minHeight:600, maxHeight: 7050)
+                    .offset(y: 10)
                     NavigationBarLow()
                         .offset(y:17)
                     Image (systemName: "arrow.down.circle")

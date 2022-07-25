@@ -18,7 +18,7 @@ struct MovieList: View {
             //}
             VStack(spacing: 15) {
                 NavigationBar()
-                    .offset(y:10)
+                    .offset(y:13)
                     
                     ScrollView {
                         //VStack{
@@ -41,7 +41,7 @@ struct MovieList: View {
                             }.navigationBarTitle("Movies")
                                 .navigationBarTitleDisplayMode(.inline)
                                 .navigationBarBackButtonHidden(true)
-                                .offset(y:20)
+                                .offset(y:30)
                             
 //                        } // VStack
                     } // Scroll View

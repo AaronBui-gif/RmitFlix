@@ -19,6 +19,7 @@ struct TVShowsView: View {
             //}
             VStack(spacing: 15) {
                 NavigationBar()
+                    .offset(y: -5)
                 HStack {
                     ForEach(Query.allCases, id: \.self) { searchQuery in
                         QueryTag(query: searchQuery, isSelected: videoManager.selectedQuery == searchQuery)
@@ -27,7 +28,7 @@ struct TVShowsView: View {
                                 videoManager.selectedQuery = searchQuery
                             }
                     }
-                }
+                }.offset(y:0)
                 
                 ScrollView {
                     if videoManager.videos.isEmpty {
@@ -45,7 +46,8 @@ struct TVShowsView: View {
                         .padding()
                     }
                 }
-                .frame(maxWidth: .infinity)
+                .frame(minHeight:550, maxHeight: 7000)
+                .offset(y:0)
                 NavigationBarLow()
             }
             .background(Color("AccentColor"))
