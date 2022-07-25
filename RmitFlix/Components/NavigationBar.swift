@@ -12,7 +12,7 @@ struct NavigationBar: View {
             
             VStack(alignment: .center,spacing: 15) {
                 HStack(alignment: .center, spacing: 20) {
-                    NavigationLink{ TestHomeView().navigationBarTitle("")
+                    NavigationLink{ Home().navigationBarTitle("")
                             .navigationBarHidden(true)
                             .navigationBarTitleDisplayMode(.inline)} label: {
                         Image("Icon")

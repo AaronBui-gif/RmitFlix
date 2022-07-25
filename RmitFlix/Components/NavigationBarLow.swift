@@ -14,7 +14,7 @@ struct NavigationBarLow: View {
             VStack{
         HStack(alignment: .bottom, spacing: 23) {
             
-            NavigationLink{ TestHomeView().navigationBarTitle("")
+            NavigationLink{ Home().navigationBarTitle("")
                     .navigationBarHidden(true)
                     .navigationBarTitleDisplayMode(.inline)} label: {
                 VStack {
