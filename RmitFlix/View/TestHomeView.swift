@@ -11,6 +11,7 @@ struct TestHomeView: View {
     @State var currentIndex: Int = 0
     @State var i: Int = 0
     
+    
     var body: some View {
         NavigationView{
             ZStack{
@@ -21,7 +22,7 @@ struct TestHomeView: View {
                     
                     
                     NavigationBar()
-                    
+                        .offset(y:10)
                     ScrollView {
                         VStack{
                             ZStack(alignment: .leading) {
@@ -34,6 +35,7 @@ struct TestHomeView: View {
                                     
                                 }
                             }
+                            .offset(y:20)
                             ZStack(alignment: .leading) {
                                 HStack(alignment: .center, spacing: 80) {
                                     Button{
@@ -80,7 +82,7 @@ struct TestHomeView: View {
                                         }
                                     }
                                 }
-                            }
+                            } .offset(y:20)
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
                                     Text("Popular on Rmitflex")
@@ -90,7 +92,7 @@ struct TestHomeView: View {
                                         .offset(x: -70, y: 10)
                                     
                                 }
-                            }
+                            } .offset(y:20)
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
                                     ScrollView(.horizontal) {
@@ -112,17 +114,17 @@ struct TestHomeView: View {
                                     }
                                 }
                                 .padding(8)
-                            }
+                            } .offset(y:20)
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
                                     Text("Popular on Asia")
                                         .fontWeight(.semibold)
                                         .font(.system(size: 25))
                                         .foregroundColor(Color.white)
-                                        .offset(x: -60, y: 20) // 320 -> 120
+                                        .offset(x: -60, y: 0) // 320 -> 120
                                 }
                                 .padding(8)
-                            }
+                            } .offset(y:20)
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
                                     ScrollView(.horizontal) {
@@ -142,7 +144,7 @@ struct TestHomeView: View {
                                     }
                                 }
                                 .padding(8)
-                            }
+                            } .offset(y:0)
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
                                     Text("Top 10")
@@ -151,7 +153,7 @@ struct TestHomeView: View {
                                         .foregroundColor(Color.white)
                                         .offset(x: -130, y: 20)
                                 }
-                            }
+                            } .offset(y:0)
                             
                             ZStack(alignment: .leading) {
                                 VStack(alignment: .leading) {
@@ -173,13 +175,14 @@ struct TestHomeView: View {
                                     }
                                 }
                                 .padding(8)
-                            }
+                            } .offset(y:0)
                             
                             
-                        }
-                    }
-                    .frame(minHeight:550, maxHeight: 7000)
+                        } // VStack
+                    } // Scroll View
+                    .frame(minHeight:600, maxHeight: 7050)
                     NavigationBarLow()
+                        .offset(y:17)
                     Image (systemName: "arrow.down.circle")
                     
                 }
