@@ -10,10 +10,6 @@ import SwiftUI
 struct SearchView: View {
     @State var currentIndex: Int = 0
     
-    @State var pictures: [Picture] = []
-    @State var asias: [Picture] = []
-    @State var tops: [Picture] = []
-    
     @State var searchText = ""
     @State var isSearching = false
     var body: some View {

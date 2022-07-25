@@ -66,7 +66,7 @@ struct NavigationBarLow: View {
                     .foregroundColor(Color.white)
                 }
             }
-            NavigationLink{ MovieList().navigationBarTitle("")
+            NavigationLink{ MenuView().navigationBarTitle("")
                     .navigationBarHidden(true)
                     .navigationBarTitleDisplayMode(.inline)} label: {
                 VStack {

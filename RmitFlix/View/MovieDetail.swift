@@ -38,35 +38,6 @@ struct MovieDetail: View {
                     
                     
                     VStack(alignment: .leading, spacing: 10) {
-//                        HStack(alignment: .center, spacing: 250){
-//                            Button(action: {
-//
-//
-//                            }, label: {
-//                                HStack(){
-//                                    Image(systemName: "play")
-//                                        .foregroundColor(Color.white)
-//                                    Text("Play")
-//                                        .foregroundColor(Color.white)
-//                                        .frame(width: 40, height: 40, alignment: .center)
-//                                }
-//                            })
-//                            .frame(width: 40, height: 40, alignment: .center)
-//                            .offset(x:30)
-//                            Button(action: {
-//
-//
-//                            }, label: {
-//                                HStack(){
-//                                    Image(systemName: "square.and.arrow.down")
-//                                        .foregroundColor(Color.white)
-//                                    Text("Save")
-//                                        .foregroundColor(Color.white)
-//                                        .frame(width: 40, height: 40, alignment: .center)
-//                                }
-//                            })
-//                            .frame(width: 40, height: 40, alignment: .center)
-//                        }
                         HStack(alignment: .center, spacing: 0) {
                         Button{
                             
