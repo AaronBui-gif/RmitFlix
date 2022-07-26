@@ -33,8 +33,8 @@ struct MovieDetail: View {
                 Group{
                     Image(movie.imageName)
                         .resizable()
-                        .frame(width: 250, height: 300)
-                        .offset(y: -10)
+                        .frame(width: 350, height: 500)
+                        .offset(y: -50)
                     
                     
                     VStack(alignment: .leading, spacing: 10) {
@@ -56,7 +56,7 @@ struct MovieDetail: View {
                         .frame(width: 300, height:40)
                         .background(Color.white)
                         }
-                        .offset(x: 25)
+                        .offset(x: 27, y: -40)
                         HStack(alignment: .center, spacing: 0) {
                         Button{
                             
@@ -75,16 +75,20 @@ struct MovieDetail: View {
                         .frame(width: 300, height:40)
                         .background(Color.gray)
                         }
-                        .offset(x: 25)
+                        .offset(x: 27, y: -40)
                     
                         Divider()
                         Text("About \(movie.title)")
                             .font(.title2)
                             .foregroundColor(Color.white)
-                            .offset(x: 10)
+                            .offset(x: 30)
+                        //ScrollView(.horizontal) {
+                            
                         Text(movie.summary)
                             .foregroundColor(Color.white)
-                            .offset(x: 10)
+                            .offset(x: 0)
+                            
+                        //}
                     }
                     
                     Text("Cast")
@@ -117,7 +121,7 @@ struct MovieDetail: View {
                 .padding()
                 
             }
-            .navigationTitle(movie.title)
+            .navigationTitle(movie.title).foregroundColor(.white)
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden(true)
             .navigationBarItems(leading: BackButton)

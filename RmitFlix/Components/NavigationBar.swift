@@ -12,6 +12,8 @@ struct NavigationBar: View {
             
             VStack(alignment: .center,spacing: 15) {
                 HStack(alignment: .center, spacing: 20) {
+                    
+                    // Netflix Logo Direct to Home View
                     NavigationLink{ Home().navigationBarTitle("")
                             .navigationBarHidden(true)
                             .navigationBarTitleDisplayMode(.inline)} label: {
@@ -20,6 +22,8 @@ struct NavigationBar: View {
                             .scaledToFit()
                             .frame(width: 50, height: 50)
                     }
+                    
+                    // TV Show Button Direct to TVShowsView
                     NavigationLink{ TVShowsView().navigationBarTitle("")
                             .navigationBarHidden(true)
                             .navigationBarTitleDisplayMode(.inline)} label: {
@@ -28,7 +32,7 @@ struct NavigationBar: View {
                             .font(.system(size: 20))
                             .foregroundColor(Color.white)
                             
-
+                    // Movie Button Direct to MovieList()
                     }
                     NavigationLink{ MovieList().navigationBarTitle("")
                             .navigationBarHidden(true)
@@ -39,6 +43,8 @@ struct NavigationBar: View {
                             .foregroundColor(Color.white)
                             
                     }
+                    
+                    // My List Button Direct to MovieList()
                     NavigationLink{ MovieList().navigationBarTitle("")
                             .navigationBarHidden(true)
                             .navigationBarTitleDisplayMode(.inline)} label: {

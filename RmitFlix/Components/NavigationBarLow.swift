@@ -14,6 +14,7 @@ struct NavigationBarLow: View {
             VStack{
         HStack(alignment: .bottom, spacing: 23) {
             
+            // Home Button
             NavigationLink{ Home().navigationBarTitle("")
                     .navigationBarHidden(true)
                     .navigationBarTitleDisplayMode(.inline)} label: {
@@ -27,6 +28,8 @@ struct NavigationBarLow: View {
                     .foregroundColor(Color.white)
                 }
             }
+            
+            // Search Button
             NavigationLink{ SearchView().navigationBarTitle("")
                     .navigationBarHidden(true)
                     .navigationBarTitleDisplayMode(.inline)} label: {
@@ -40,6 +43,8 @@ struct NavigationBarLow: View {
                     .foregroundColor(Color.white)
                 }
             }
+            
+            // Coming Soon Button
             NavigationLink{ ComingSoonView().navigationBarTitle("")
                     .navigationBarHidden(true)
                     .navigationBarTitleDisplayMode(.inline)} label: {
@@ -53,6 +58,8 @@ struct NavigationBarLow: View {
                     .foregroundColor(Color.white)
                 }
             }
+            
+            // Downloads button
             NavigationLink{ MovieList().navigationBarTitle("")
                     .navigationBarHidden(true)
                     .navigationBarTitleDisplayMode(.inline)} label: {
@@ -66,6 +73,8 @@ struct NavigationBarLow: View {
                     .foregroundColor(Color.white)
                 }
             }
+            
+            // Menu Button
             NavigationLink{ MenuView().navigationBarTitle("")
                     .navigationBarHidden(true)
                     .navigationBarTitleDisplayMode(.inline)} label: {

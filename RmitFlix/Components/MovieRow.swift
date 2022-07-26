@@ -12,6 +12,7 @@ struct MovieRow: View {
     var movie: Movie
 
     var body: some View {
+        // Display image for movie
             movie.image
                 .resizable()
                 .frame(width: 120, height: 200)

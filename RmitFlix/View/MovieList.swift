@@ -9,8 +9,6 @@ import SwiftUI
 
 struct MovieList: View {
     
-    @State var myList = false // MyList View
-    @State var tvShow = false
     var body: some View {
         NavigationView {
             ZStack {
@@ -41,12 +39,9 @@ struct MovieList: View {
                             }.navigationBarTitle("Movies")
                                 .navigationBarTitleDisplayMode(.inline)
                                 .navigationBarBackButtonHidden(true)
-                                .offset(y:30)
-                            
-//                        } // VStack
+                                
                     } // Scroll View
                     .frame(minHeight:600, maxHeight: 7000)
-//                    .frame(maxWidth: .infinity)
                     NavigationBarLow()
                         .offset(y:17)
                     Image (systemName: "arrow.down.circle")
