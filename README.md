@@ -11,7 +11,8 @@
 -- Carousel using image from Json Data and Assest
 -- NavigationView and NavigationLink to direct to other views.
 ![CleanShot 2022-07-30 at 15 54 45](https://user-images.githubusercontent.com/56668881/181903652-1e5c9686-59d9-47ad-a725-7d88ec7c1b68.gif)
-![CleanShot 2022-07-30 at 15 54 45](https://user-images.githubusercontent.com/56668881/181903154-5ee97c8e-6c0a-421f-91f1-168a2bf701a7.gif)
+![CleanShot 2022-07-30 at 16 25 30](https://user-images.githubusercontent.com/56668881/181904328-bd0faf46-4352-4ae0-960b-6ecac9447957.gif)
+
 
 ## 📺 TVShow View
 -- Pexels api (www.pexels.com/api)
