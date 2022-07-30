@@ -5,9 +5,7 @@
 - This app contains simple components such as NavigationLink for direct to other views, ScrollView to create carousel, ...
 - Moreover, this app also has Pexels API, Json Data, ...
 
-<img width="230" alt="CleanShot 2022-07-30 at 16 32 57@2x" src="https://user-images.githubusercontent.com/56668881/181904498-6492b9b3-9328-4bc1-8215-e2738b412770.png">
-<img width="230" alt="CleanShot 2022-07-30 at 16 33 16@2x" src="https://user-images.githubusercontent.com/56668881/181904504-f0741b8e-c6ad-443a-8670-2743acac1fd1.png">
-<img width="230" alt="CleanShot 2022-07-30 at 16 05 19@2x" src="https://user-images.githubusercontent.com/56668881/181903495-75bcc546-2824-4821-a1f1-a0cef00e5f87.png">
+<img width="230" alt="CleanShot 2022-07-30 at 16 33 16@2x" src="https://user-images.githubusercontent.com/56668881/181904504-f0741b8e-c6ad-443a-8670-2743acac1fd1.png"><img width="230" alt="CleanShot 2022-07-30 at 16 05 19@2x" src="https://user-images.githubusercontent.com/56668881/181903495-75bcc546-2824-4821-a1f1-a0cef00e5f87.png"><img width="230" alt="CleanShot 2022-07-30 at 16 32 57@2x" src="https://user-images.githubusercontent.com/56668881/181904498-6492b9b3-9328-4bc1-8215-e2738b412770.png">
 
 
 ## 🏡 Home View
