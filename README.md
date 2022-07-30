@@ -5,9 +5,9 @@
 -- This app contains simple components such as NavigationLink for direct to other views, ScrollView to create carousel, ...
 -- Moreover, this app also has Pexels API, Json Data, ...
 
-<img width="238" alt="CleanShot 2022-07-30 at 16 32 57@2x" src="https://user-images.githubusercontent.com/56668881/181904498-6492b9b3-9328-4bc1-8215-e2738b412770.png">
-<img width="233" alt="CleanShot 2022-07-30 at 16 33 16@2x" src="https://user-images.githubusercontent.com/56668881/181904504-f0741b8e-c6ad-443a-8670-2743acac1fd1.png">
-<img width="238" alt="CleanShot 2022-07-30 at 16 05 19@2x" src="https://user-images.githubusercontent.com/56668881/181903495-75bcc546-2824-4821-a1f1-a0cef00e5f87.png">
+<img width="230" alt="CleanShot 2022-07-30 at 16 32 57@2x" src="https://user-images.githubusercontent.com/56668881/181904498-6492b9b3-9328-4bc1-8215-e2738b412770.png">
+<img width="230" alt="CleanShot 2022-07-30 at 16 33 16@2x" src="https://user-images.githubusercontent.com/56668881/181904504-f0741b8e-c6ad-443a-8670-2743acac1fd1.png">
+<img width="230" alt="CleanShot 2022-07-30 at 16 05 19@2x" src="https://user-images.githubusercontent.com/56668881/181903495-75bcc546-2824-4821-a1f1-a0cef00e5f87.png">
 
 
 ## 🏡 Home View
@@ -15,6 +15,11 @@
 -- NavigationView and NavigationLink to direct to other views.
 ![CleanShot 2022-07-30 at 15 54 45](https://user-images.githubusercontent.com/56668881/181903652-1e5c9686-59d9-47ad-a725-7d88ec7c1b68.gif)
 ![CleanShot 2022-07-30 at 16 25 30](https://user-images.githubusercontent.com/56668881/181904328-bd0faf46-4352-4ae0-960b-6ecac9447957.gif)
+
+## 🔎 Search View
+-- Simple search View
+![CleanShot 2022-07-30 at 16 45 07](https://user-images.githubusercontent.com/56668881/181904885-e61bea63-9695-4bae-b26d-9c721f36b5a4.gif)
+
 
 
 ## 📺 TVShow View
