@@ -43,6 +43,7 @@
 - XCode 13.4.1
 - SwiftUI Framework
 - Targetting Ios => 15.5
+- Work best for Iphone 12 Mini
 
 ## ✍️ Author
 - Bui Thanh Huy - aaronhuy2509@gmail.com
