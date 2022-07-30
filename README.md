@@ -18,16 +18,14 @@
 -- Pexels api (www.pexels.com/api)
 -- videoData.json, TVShowsView, VideoCard, QueryTag, VideoView
 
-![Uploading CleanShot 2022-07-30 at 16.27.24.gif…]()
+![CleanShot 2022-07-30 at 16 27 24](https://user-images.githubusercontent.com/56668881/181904415-6e873124-267a-47a6-8113-b4fb5d64ab4d.gif)
+
 
 
 ## 🍿 Movie List
 -- Json Data, Image from Assest
 
 
-![CleanShot 2022-07-30 at 16 18 48](https://user-images.githubusercontent.com/56668881/181904067-6630fe70-dddb-4dfa-8cf7-d6ab3c650c8a.gif)
-![CleanShot 2022-07-30 at 16 20 48](https://user-images.githubusercontent.com/56668881/181904127-2e361196-cae4-487d-a555-f323b50c53ed.gif)
-  
 ![CleanShot 2022-07-30 at 16 18 48](https://user-images.githubusercontent.com/56668881/181904067-6630fe70-dddb-4dfa-8cf7-d6ab3c650c8a.gif)
 ![CleanShot 2022-07-30 at 16 20 48](https://user-images.githubusercontent.com/56668881/181904127-2e361196-cae4-487d-a555-f323b50c53ed.gif)
 
@@ -37,6 +35,9 @@
 -- SwiftUI Framework
 -- Targetting Ios => 15.5
 
+## ✍️ Author
+-- Bui Thanh Huy - aaronhuy2509@gmail.com
+- Linkedin - https://www.linkedin.com/in/aaron-bui-372a56194/
 
 
 
