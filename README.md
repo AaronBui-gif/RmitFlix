@@ -18,31 +18,16 @@
 -- Pexels api (www.pexels.com/api)
 -- videoData.json, TVShowsView, VideoCard, QueryTag, VideoView
 
-<table>
-  <tr>
-    <td></td>
-     <td></td>
-  </tr>
-  <tr>
-    <td>![CleanShot 2022-07-30 at 16 16 31](https://user-images.githubusercontent.com/56668881/181903946-a29c9512-b1a5-4190-bf47-821732cf663a.gif)</td>
-    <td>![CleanShot 2022-07-30 at 16 13 58](https://user-images.githubusercontent.com/56668881/181903830-7fcc5efb-ed86-4883-a229-b3f612a6dd76.gif)</td>
-   </tr>
+![Uploading CleanShot 2022-07-30 at 16.27.24.gif…]()
 
- </table>
 
 ## 🍿 Movie List
 -- Json Data, Image from Assest
 
 
-<table>
-  <tr>
-    <td></td>
-     <td></td>
-  </tr>
-  <tr>
-    <td>![CleanShot 2022-07-30 at 16 18 48](https://user-images.githubusercontent.com/56668881/181904067-6630fe70-dddb-4dfa-8cf7-d6ab3c650c8a.gif)</td>
-    <td>![CleanShot 2022-07-30 at 16 20 48](https://user-images.githubusercontent.com/56668881/181904127-2e361196-cae4-487d-a555-f323b50c53ed.gif)</td>
-   </tr>
+![CleanShot 2022-07-30 at 16 18 48](https://user-images.githubusercontent.com/56668881/181904067-6630fe70-dddb-4dfa-8cf7-d6ab3c650c8a.gif)
+![CleanShot 2022-07-30 at 16 20 48](https://user-images.githubusercontent.com/56668881/181904127-2e361196-cae4-487d-a555-f323b50c53ed.gif)
+  
 ![CleanShot 2022-07-30 at 16 18 48](https://user-images.githubusercontent.com/56668881/181904067-6630fe70-dddb-4dfa-8cf7-d6ab3c650c8a.gif)
 ![CleanShot 2022-07-30 at 16 20 48](https://user-images.githubusercontent.com/56668881/181904127-2e361196-cae4-487d-a555-f323b50c53ed.gif)
 
