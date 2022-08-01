@@ -25,6 +25,7 @@
 
 ## 📺 TVShow View
 - Pexels api (www.pexels.com/api)
+- Youtube Link: https://www.youtube.com/watch?v=9TwO9yMsPRg&t=1611s
 - videoData.json, TVShowsView, VideoCard, QueryTag, VideoView
 
 ![CleanShot 2022-07-30 at 16 27 24](https://user-images.githubusercontent.com/56668881/181904415-6e873124-267a-47a6-8113-b4fb5d64ab4d.gif)
